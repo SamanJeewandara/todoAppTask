@@ -1,0 +1,28 @@
+$width: 350px;
+$border-radius: 25px;
+$button-hight: 26px;
+$button-width:100px;
+$button-color:lightblue;
+$input-color: gray;
+$input-height: 15px;
+$input-width: 180px;
+
+.card {
+  max-width: $width;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  margin: 150px auto;
+}
+.button {
+  width: $button-width;
+  height: $button-hight;
+  background-color:$button-color
+}
+.input {
+    height: $input-height;
+    width:$input-width;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius:$border-radius;
+}
