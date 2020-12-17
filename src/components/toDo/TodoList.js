@@ -1,6 +1,8 @@
 import React from 'react';
 import { Checkbox, Row, Col } from 'antd';
+import PropTypes from 'prop-types';
 import './TodoList.scss';
+
 const ToDoList = ({ todoItems }) => {
 
   return (
@@ -15,6 +17,10 @@ const ToDoList = ({ todoItems }) => {
       </ul>
     </div>
   );
+};
+
+ToDoList.propTypes = {
+  todoItems: PropTypes.array.isRequired,
 };
 
 export default ToDoList;

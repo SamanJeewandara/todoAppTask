@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import ToDoList from './TodoList';
 import { Input, Button } from 'antd';
+import PropTypes from 'prop-types';
 import './ToDo.scss'
 
 function ToDo() {
+
   const [newTodo, setNewTodo] = useState('');
   const [todoItems, setTodoItems] = useState([]);
 
@@ -35,5 +37,10 @@ const addNewTask = () => {
      </div>
   );
 }
+
+ToDo.propTypes = {
+  newTodo: PropTypes.string,
+  todoItems: PropTypes.array,
+};
 
 export default ToDo;
