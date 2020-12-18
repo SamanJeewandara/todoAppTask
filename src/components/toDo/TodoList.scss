@@ -1,8 +1,12 @@
 .form-check{
   li{
       list-style: none;
-      margin-left: 25px;
-      text-align:left;
+      text-align: left;
       display: inline;
+      padding-top: 10px;
+      width: 100%;
+  }
+  .list-item {
+    padding-left: 10px;
   }
   }

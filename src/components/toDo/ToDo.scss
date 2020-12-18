@@ -1,6 +1,6 @@
 $width: 350px;
 $border-radius: 25px;
-$button-hight: 26px;
+$button-hight: 32px;
 $button-width:100px;
 $button-color:lightblue;
 $input-color: gray;
@@ -19,7 +19,9 @@ $input-width: 180px;
 .button {
   width: $button-width;
   height: $button-hight;
-  background-color:$button-color
+  background-color:$button-color;
+  border: none;
+  cursor: pointer;
 }
 
 .input {
@@ -27,4 +29,6 @@ $input-width: 180px;
     width:$input-width;
     border: 5px solid rgba(0, 0, 0, 0.1);
     border-radius:$border-radius;
+    padding: 5px 10px 5px 10px;
+    margin-right: 5px;
 }

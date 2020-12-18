@@ -24,16 +24,17 @@ const addNewTask = () => {
       </h2>
       <Input className="input" value={newTodo} onChange={(event) => {
         setNewTodo(event.target.value);
-      }}
-      />
-      <Button className="button" onClick={addNewTask}
-      >
+      }}/>
+      <Button className="button" onClick={addNewTask}>
         ADD
       </Button>
       <h2>
         Today's Task List
       </h2>
-      <ToDoList todoItems={todoItems} />
+      <ToDoList
+       todoItems={todoItems}
+       setTodoItems={setTodoItems}
+        />
      </div>
   );
 }
