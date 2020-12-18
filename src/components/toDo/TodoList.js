@@ -3,6 +3,7 @@ import { Checkbox, Row } from 'antd';
 import PropTypes from 'prop-types';
 import { CloseCircleOutlined } from '@ant-design/icons';
 import './TodoList.scss';
+import '../styles/main.css'
 
 const ToDoList = ({ todoItems, setTodoItems }) => {
 
@@ -17,7 +18,7 @@ const ToDoList = ({ todoItems, setTodoItems }) => {
         {todoItems?.map((todoItem) =>
         <Row>
           <Checkbox />
-           <li key={todoItem.id}>{todoItem.name}</li>
+           <li className="text-blue-400" key={todoItem.id}>{todoItem.name}</li>
            <CloseCircleOutlined onClick={() => onChange(todoItem.id)}/>
            </Row>
            )}

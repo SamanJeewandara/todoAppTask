@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import ToDoList from './TodoList';
 import { Input, Button } from 'antd';
 import PropTypes from 'prop-types';
-import './ToDo.scss'
+import './ToDo.scss';
+import '../styles/main.css'
 
 function ToDo() {
 
@@ -16,10 +17,10 @@ const addNewTask = () => {
 
   return (
     <div className="card">
-      <h1>
+      <h1 className="text-blue-400">
         TODO
       </h1>
-      <h2>
+      <h2 className="text-blue-400">
         Add Your Task
       </h2>
       <Input className="input" value={newTodo} onChange={(event) => {
@@ -28,7 +29,7 @@ const addNewTask = () => {
       <Button className="button" onClick={addNewTask}>
         ADD
       </Button>
-      <h2>
+      <h2 className="text-blue-400">
         Today's Task List
       </h2>
       <ToDoList

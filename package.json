@@ -10,14 +10,14 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
-    "tailwindcss": "^2.0.2",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run watch:css && react-scripts start",
+    "build": "npm run watch:css && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch:css": "postcss src/components/styles/tailwind.css -o src/components/styles/main.css"
   },
   "eslintConfig": {
     "extends": [
@@ -38,7 +38,11 @@
     ]
   },
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
     "sass": "^1.30.0",
-    "sass-loader": "^10.1.0"
+    "sass-loader": "^10.1.0",
+    "tailwindcss": "^2.0.2"
   }
 }
